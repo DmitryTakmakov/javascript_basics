@@ -21,14 +21,10 @@ function myDiv(arg1, arg2) {
 let a = parseInt(prompt('Введите первое число.'));
 let b = parseInt(prompt('Введите второе число, пожалуйста, не ноль!'));
 
-let result1 = mySum(a, b);
-alert(`Сумма чисел: ${result1}`);
+alert(`Сумма чисел: ${mySum(a, b)}`);
 
-let result2 = mySubtr(a, b);
-alert(`Разность чисел: ${result2}`);
+alert(`Разность чисел: ${mySubtr(a, b)}`);
 
-let result3 = myMult(a, b);
-alert(`Произведение чисел: ${result3}`);
+alert(`Произведение чисел: ${myMult(a, b)}`);
 
-let result4 = myDiv(a, b);
-alert(`Частное от деления чисел: ${result4.toFixed(2)}`);
+alert(`Частное от деления чисел: ${myDiv(a, b).toFixed(2)}`);

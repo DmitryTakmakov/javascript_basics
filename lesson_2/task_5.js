@@ -31,7 +31,7 @@ function mathOperation (arg1, arg2, operation) {
             alert(`Частное: ${myDiv(arg1, arg2).toFixed(2)}`);
             break;
         default:
-            alert('Я не знаю такой операции!')
+            alert('Я не знаю такой операции!');
     }
 }
 
