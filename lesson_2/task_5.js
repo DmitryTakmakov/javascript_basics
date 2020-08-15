@@ -1,5 +1,12 @@
 'use strict';
 
+/**
+ * 
+ * @param {number} arg1 Первое число для математической операции.
+ * @param {number} arg2 Второе число для математической операции.
+ * @param {string} operation Обозначение операции в строковом виде. Может быть: сложение, вычитание, умножение, деление.
+ * @returns {string} Результат вычислений в красивом строковом виде.
+ */
 function mathOperation (arg1, arg2, operation) {
     function mySum(num1, num2) {
         return num1 + num2;
@@ -19,19 +26,15 @@ function mathOperation (arg1, arg2, operation) {
 
     switch (operation) {
         case "сложение":
-            alert(`Сумма: ${mySum(arg1, arg2)}`);
-            break;
+            return `Сумма: ${mySum(arg1, arg2)}`;
         case "вычитание":
-            alert(`Разность: ${mySubtr(arg1, arg2)}`);
-            break;
+            return `Разность: ${mySubtr(arg1, arg2)}`;
         case "умножение":
-            alert(`Произведение: ${myMult(arg1, arg2)}`);
-            break;
+            return `Произведение: ${myMult(arg1, arg2)}`;
         case "деление":
-            alert(`Частное: ${myDiv(arg1, arg2).toFixed(2)}`);
-            break;
+            return `Частное: ${myDiv(arg1, arg2).toFixed(2)}`;
         default:
-            alert('Я не знаю такой операции!');
+            return 'Я не знаю такой операции!';
     }
 }
 
@@ -39,4 +42,4 @@ let a = parseInt(prompt('Введите первое число.'));
 let b = parseInt(prompt('Введите второе число, пожалуйста, не ноль!'));
 let operation = prompt('Введите математическую операцию: сложение, вычитание, умножение или деление.');
 
-mathOperation(a, b, operation);
+alert(mathOperation(a, b, operation));
