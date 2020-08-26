@@ -1,0 +1,27 @@
+.container {
+    margin: 0 auto;
+    background-color: antiquewhite;
+    height: 500px;
+}
+
+button {
+    position: relative;
+    left: 50%;
+    top: 50%;
+}
+
+.modal {
+    display: inline-block;
+    background-color: blueviolet;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    text-align: center;
+    box-shadow: 0 0 10px gray;
+}
+
+.hidden {
+    display: none;
+}
