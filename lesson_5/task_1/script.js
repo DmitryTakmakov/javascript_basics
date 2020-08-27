@@ -12,7 +12,7 @@ button.addEventListener('click', function() {
 wrapper.addEventListener('click', function() {
     modalWindow.classList.remove('puffIn');
     modalWindow.classList.add('puffOut');
-    setTimeout(function() {
+    setTimeout(function() { //возвращает модальное окно в изначальное состояние, как вся анимация отработает
         modalWindow.classList.add('hidden');
         modalWindow.classList.remove('magictime', 'puffOut');
     }, 1000);
