@@ -1,0 +1,27 @@
+html {
+    background: #ccffcc;
+}
+
+table {
+    border-collapse: collapse;
+    background: whitesmoke;
+}
+
+td {
+    border: 2px solid black;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.blackCell {
+    background: black;
+}
+
+.whiteCell {
+    background: white;
+}
+
+.cornerCell {
+    background: silver;
+}
