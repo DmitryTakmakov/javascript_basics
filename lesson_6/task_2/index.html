@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Task 2</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="btn-group ml-auto">
+            <button
+            class="btn btn-light btn-lg dropdown-toggle" 
+            type="button" 
+            data-toggle="dropdown">
+            <img src="img/basket2.svg" class="cart-btn-empty">
+            <img src="img/basket2-fill.svg" class="cart-btn-full invisible">
+            Корзина
+            </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Имя</th>
+                                <th scope="col">Цена</th>
+                                <th scope="col">Количество</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                        <tfoot>
+                            <th colspan="2" scope="row">Итого:</th>
+                            <th colspan="3">
+                                <span class="total">0</span>
+                            </th>
+                        </tfoot>
+                    </table>
+                </div>
+        </div>
+    </nav>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="img/prod_1.jpg" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Product 1</h5>
+            <span class="card-footer product-price">120</span>
+            <button 
+            type="button" 
+            class="btn btn-primary addToCartBtn" 
+            data-id="1" 
+            data-price="120" 
+            data-name="Product 1">
+            <img src="img/basket2.svg">
+            Добавить в корзину
+            </button>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="img/prod_2.jpg" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Product 2</h5>
+            <span class="card-footer product-price">500</span>
+            <button 
+            type="button" 
+            class="btn btn-primary addToCartBtn" 
+            data-id="2" 
+            data-price="500"
+            data-name="Product 2">
+            <img src="img/basket2.svg">
+            Добавить в корзину
+            </button>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="img/prod_3.jpg" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Product 3</h5>
+            <span class="card-footer product-price">888</span>
+            <button 
+            type="button" 
+            class="btn btn-primary addToCartBtn" 
+            data-id="3" 
+            data-price="888"
+            data-name="Product 3">
+            <img src="img/basket2.svg">
+            Добавить в корзину
+            </button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
