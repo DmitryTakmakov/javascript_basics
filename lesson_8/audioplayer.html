@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player">
+        <audio src="resources/track_1.mp3"></audio>
+        <div class="playerHeader">Current time: <span class="currentTime">0.0</span></div>
+        <div class="controls">
+            <input type="range" class="timer" value="0" step="0.01">
+            <div class="buttons">
+                <i class="fas fa-step-backward fa-2x"></i>
+                <i class="fas fa-fast-backward fa-2x"></i>
+                <i class="fas fa-pause fa-2x"></i>
+                <i class="fas fa-play fa-2x"></i>
+                <i class="fas fa-fast-forward fa-2x"></i>
+                <i class="fas fa-step-forward fa-2x"></i>
+            </div>
+        </div>
+    </div>
+    <!--
+    <script>
+        'use strict';
+
+        let audio = document.querySelector('audio');
+        function myPlay() {
+            audio.play();
+        }
+        setTimeout(myPlay, 3000);
+        function myPause() {
+            audio.pause();
+        }
+        setTimeout(myPause, 10000);
+    </script>-->
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/Player.js"></script>
+</body>
+</html>

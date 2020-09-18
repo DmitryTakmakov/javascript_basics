@@ -1,0 +1,35 @@
+.html {
+    margin: 0 auto;
+}
+
+.player {
+    width: 500px;
+    height: 250px;
+    display: inline-block;
+    margin: 5% 10%;
+    border: 1px solid black;
+    background: linear-gradient(-45deg, #ec7dda, #808080);
+    position: relative;
+}
+
+.playerHeader {
+    padding-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.controls {
+    position: relative;
+    width: 470px;
+    margin: 64px 15px;
+}
+
+.timer {
+    position: absolute;
+    width: 100%;
+}
+
+.buttons {
+    position: absolute;
+    margin: 30px 134px;
+}
